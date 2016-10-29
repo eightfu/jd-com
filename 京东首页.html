@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东首页</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		.divOne{
+			font-size: 13px;
+			height: 30px;
+			background-color: lightgray;
+		}
+		.span1{
+			color: #b1191a;
+		}
+		.div1{
+			position: relative;
+			left:50px;
+			top: 5px;
+		}
+		.div2{
+			position: relative;
+			bottom: 10px;
+			left: 450px;
+		}
+		div .div2 a{
+			margin: 0px 3px;
+			text-decoration: none;
+			color: black;
+		}
+		.lay{
+			width: 1210px;
+			margin: 0px auto;
+		}
+		.divTwo{
+			margin: 0px;
+
+		}
+		.logo-search{
+			width: 1210px;
+			height: 100px;
+			margin: 0px auto;
+		}
+		.logo{
+			width: 270px;
+			height: 60px;
+			float: left;
+			margin:15px 0px;
+		}
+		.search{
+			width: 538px;
+			height: 40px;
+			float: left;
+			margin-top: 25px;
+			margin-left: 60px;
+
+		}
+		.input1{
+			width: 430px;
+			height: 30px;
+			font-family: "微软雅黑";
+			border:solid 2px;
+			border-color: #b1191a;
+		}
+		.input2{
+			width: 100px;
+			height: 34px;
+			background-color: #b1191a;
+			color: white;
+			font-size: 18px;
+			border:solid 0px;
+		}
+		.input3{
+			width: 140px;
+			height: 36px;
+			font-family: "微软雅黑";
+			text-align: center;
+			background-color: lightgray;
+			border:solid 0px;
+			float: right;
+			margin-top:25px;
+			margin-right: 65px;
+		}
+		.span2{
+			color: darkred;
+		}
+		.category{
+			width: 200px;
+			height: 35px;
+			color: white;
+			font-family: "微软雅黑";
+			background-color:#b1191a;
+			padding: 5px;
+			line-height: 35px;
+			float: left;
+		}
+		.keywords{
+			font-size: 13px;
+			font-family: "微软雅黑";
+			float: left;
+			margin-left: 60px;
+		}
+		div .keywords a{
+			margin: 0px 4px;
+			text-decoration: none;
+			color: black;
+		}
+		.bottomline{
+			width: 100%;
+			height: 44px;
+			border-bottom:solid 2px #b1191a;
+		}
+		.Nav{
+			width: 1210px;
+			height: 44px;
+			margin: 0px auto;
+
+		}
+		.nav{
+			height: 44px;
+			font-size: 16px;
+			font-family:"微软雅黑";	
+			line-height: 44px;
+
+		}
+		.twoa{
+			margin:0px 15px;
+			text-decoration: none;
+			color: black;
+		}
+		.contentdiv{
+			width: 1210px;
+			margin: 0px auto;
+		}
+		.smallnav{
+			width: 210px;
+			height: 466px;
+			background-color: #c81623;
+			float: left;
+		}
+		div .smallnav li{
+			color: white;
+			font-size: 14px;
+			font-family: "微软雅黑";
+			padding: 4px;
+			margin: 4px;
+			list-style-type: none;
+		}
+		.pic{
+			margin: 11px;
+			float: left;
+		}
+		.news{
+			width: 247px;
+			height:170px;
+			border-color: red;
+			float: left;
+		}
+		.jdnews{
+			width: 247px;
+			height: 160px;
+			border: solid #e4e4e4 1px;
+			margin-top: 10px;
+			position: relative;
+		}
+		.newshead{
+			line-height: 34px;
+			border-bottom: dotted 1px;
+			padding-left: 4px; 
+		}
+		.newsmore{
+			font-size: 12px;
+			position: absolute;
+			right: 20px;
+			top: 10px;
+		}
+		.newslist{
+			width: 247px;
+			height: 72px;
+			border: solid lightgrey 1px;
+			border-top: 0px;
+		}
+		div .li1 li{
+			color: gray;
+			list-style-type: none;
+			margin: 5px 5px 7px 8px;
+		}
+		.span3{
+			font-family: "微软雅黑";
+			font-size: 15px;
+		}
+		.newslist li{
+			float: left;
+		}
+		.li1{
+			font-size: 12px;
+		}
+		.span4{
+			font-size: 12px;
+			font-weight: bold;
+			font-family: "微软雅黑";
+		}
+		.life-service{
+			width: 248px;
+			height: 204px;
+			border-right:1px solid #e4e4e4;
+		}
+		.life-service ul{
+			width: 248px;
+			/*height: 197px;*/
+			margin: auto 0px;
+		}
+		.life-service ul li{
+			width: 61px;
+			float: left;
+			height: 67px;
+			position: relative;
+			list-style-type: none;
+			border-left: 1px solid #e4e4e4;
+			border-bottom: 1px solid #e4e4e4;
+		}
+		.life-img{
+			width: 25px;
+			height: 25px;
+			background-image: url('life.png');
+			position: absolute;
+			top: 13px;
+			left: 18px;
+		}
+		.life-service ul li a{
+			display: inline-block;
+			width: 50px;
+			height: 67px;
+		}
+		.life-service ul li span{
+			width: 40px;
+			position: absolute;
+			bottom: 7px;
+			left: 15px;
+			font-size: 12px;
+			color: gray;
+		}
+		.float-left{
+			float: left;
+		}
+		.float-right{
+			float: right;
+		}
+		.smallimg{
+			width: 247px;
+			margin-top: 6px;
+		}
+		.smallimg1{
+			width: 248px;
+			height: 83px;
+		}
+		.imgdiv{
+			width: 1210px;
+			height: 160px;
+			margin: 0px auto;
+		}
+		.clock{
+			width: 200px;
+			height: 160px;
+		}
+		.fourimg{
+			width: 249px;
+			margin-right: 2px;
+		}
+		.fourimg1{
+			width: 249px;
+		}
+		.endlist{
+			width: 1210px;
+			margin: 0px auto;
+			height: 200px;
+		}
+		dt{
+			font-size: 16px;
+			color: gray;
+			font-family: "微软雅黑";
+		}
+		.dt1{
+			width: 150px;
+			height: 20px;
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+		.endlist1{
+			font-size: 12px;
+			margin: 5px 20px;
+		}
+		dd{
+			color: gray;
+			padding:2px;
+		}
+		.lastp{
+			width: 180px;
+			height: 30px;
+			margin: 20px;
+			font-size: 12px;
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+	<!-- 1.第一行div的导航部分 -->
+	<div class="divOne" >
+		<!-- 送至北京 -->
+		<div class="lay">	
+			<div class="div1">
+			送至：
+				<select>
+					<option>北京</option>
+					<option>上海</option>
+					<option>天津</option>
+					<option>重庆</option>
+					<option>河北</option>
+					<option>湖北</option>
+					<option>广州</option>
+					<option>深圳</option>
+					<option>杭州</option>
+					<option>南京</option>
+				</select>	
+			</div>
+			<!-- 请登录注册部分 -->
+			<div class="div2">
+					<a href="">你好，请登录</a>
+					<a href=""><span class="span1">免费注册  |</span></a>
+					<a href="">我的订单  |</a>
+					<a href="">我的京东  |</a>
+					<a href="">京东会员  |</a>
+					<a href="">企业采购  |</a>
+					<a href="">手机京东  |</a>
+					<a href="">关注京东  |</a>
+					<a href="">客服服务  |</a>
+					<a href="">网站导航</a>
+			</div>
+		</div>
+	</div>
+	<!-- 2.第二行div部分 -->
+	<div>
+		<!-- 活动条图片 -->
+		<div class="divTwo">
+			<img style="width:100%" src="http://img30.360buyimg.com/da/jfs/t2869/212/3674638800/114592/2e5f4d37/5796c3b6Nc2c6eff1.jpg">
+		</div>
+	</div>	
+	<!-- 3.第三行div部分 -->
+	<div class="logo-search">
+		<!-- 京东logo -->
+		<div class="logo">
+			<a href=""><img src="http://misc.360buyimg.com/lib/img/e/logo-201305.png"></a>
+		</div>
+		<!-- 搜索框 -->
+		<div class="search">
+			<input class="input1" type="text" name="" value="金融"><span><input class="input2" type="button" name="" value="搜索"></span>
+		</div>
+		<!-- 购物车 -->
+		<div>
+			<input class="input3" type="text" name="" value="我的购物车 >">
+		</div>
+		<!-- 关键字 -->
+		<div class="keywords">
+				<a href=""><span class="span2">三星首发</span></a>
+				<a href="">直降2000</a>
+				<a href="">农用物资</a>
+				<a href="">中兴A1直降</a>
+				<a href="">1元拿走</a>
+				<a href="">gtx1060</a>
+				<a href="">哈雷摩托车</a>
+				<a href="">小米电脑</a>
+		</div>
+	</div>
+	<!-- 4.第四行div部分 -->
+	<div class="bottomline">
+		<div class="Nav">	
+			<!-- 全部商品分类 -->
+			<div>
+				<label class="category">全部商品分类</label>
+			</div>
+			<!-- 导航栏 -->
+			<div class="nav">
+				<a class="twoa" href="">服装城</a>
+				<a class="twoa" href="">美妆馆</a>
+				<a class="twoa" href="">京东超市</a>
+				<a class="twoa" href="">生鲜</a>
+				<a class="twoa" href="">全球购</a>
+				<a class="twoa" href="">闪购</a>
+				<a class="twoa" href="">团购</a>
+				<a class="twoa" href="">拍卖</a>
+				<a class="twoa" href="">金融</a>
+			</div>
+		</div>
+	</div>
+	<!-- 第五行div部分 -->
+	<div class="bodydiv">
+		<!-- 左边详细分类导航 -->
+		<div class="contentdiv">
+			<div class="smallnav">
+				<ul>
+					<li>家用电器</li>
+					<li>手机、数码、京东通信</li>
+					<li>电脑、办公</li>
+					<li>家居、家具、家装、厨具</li>
+					<li>男装、女装、童装、内衣</li>
+					<li>个护化妆、清洁用品、宠物</li>
+					<li>鞋靴、箱包、珠宝、奢侈品</li>
+					<li>运动户外、钟表</li>
+					<li>汽车、汽车用品</li>
+					<li>母婴、玩具乐器</li>
+					<li>食品、酒类、生鲜、特产</li>
+					<li>医药保健</li>
+					<li>图书、音像、电子书</li>
+					<li>彩票、旅行、充值、票务</li>
+					<li>理财、众筹、白条、保险</li>
+				</ul>
+			</div>
+			<!-- 中间图片展示 -->
+			<div class="pic">
+				<img src="http://img13.360buyimg.com/da/jfs/t3001/22/65860386/96768/d53c1945/5791b5e8Nea311ab5.jpg">
+			</div>
+			<!-- 右边其他导航 -->
+			<div class="news">
+				<!-- 京东news -->
+				<div class="jdnews">
+					<!-- 京东快报 -->
+					<div class="newshead">
+						<label><span class="span3">京东快报</span></label>
+					</div>
+					<!-- 更多 -->
+					<div class="newsmore">
+						<a href="">更多 ></a>
+					</div>
+					<!-- 列表新闻 -->
+					<div>
+						<ul class="li1">
+							<li><span class="span4">[特惠]</span> 华中周年庆7.28秒不停</li>
+							<li><span class="span4">[公告]</span> 华北东北区因强降雨配送延迟</li>
+							<li><span class="span4">[特惠]</span> 三星Tab Pro S预约抽奖送平板</li>
+							<li><span class="span4">[公告]</span> 丹寨馆百日庆 传承文化邀你赏</li>
+							<li><span class="span4">[特惠]</span> 欧德堡牛奶部分第二件半价</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 生活服务 -->
+				<div class="life-service">
+					<ul>
+						<li><a href=""><div class="life-img" style="background-position: 0px 0px;"></div><span>话费</span></a></li>
+				  		<li><a href="#"><div class = "life-img" style="background-position: 0px -25px;"></div><span>机票</span></a></li>
+                  		<li><a href="#"><div class = "life-img" style="background-position: 0px -50px;"></div><span>电影票</span></a></li>
+                  		<li><a href="#"><div class = "life-img" style="background-position: 0px -75px;"></div><span>游戏</span></a></li>
+		                <li><a href="#"><div class = "life-img" style="background-position: 0px -100px;"></div><span>彩票</span></a></li>
+		                <li><a href="#"><div class = "life-img" style="background-position: 0px -125px;"></div><span>团购</span></a></li>
+		                <li><a href="#"><div class = "life-img" style="background-position: 0px -150px;"></div><span>酒店</span></a></li>
+		                <li><a href="#"><div class = "life-img" style="background-position: 0px -175px;"></div><span>火车票</span></a></li>
+		                <li><a href="#"><div class = "life-img" style="background-position: 0px -200px;"></div><span>众筹</span></a></li>
+		                <li><a href="#"><div class = "life-img" style="background-position: 0px -225px;"></div><span>理财</span></a></li>
+		                <li><a href="#"><div class = "life-img" style="background-position: 0px -250px;"></div><span>礼品卡</span></a></li>
+		                <li><a href="#"><div class = "life-img" style="background-position: 0px -275px;"></div><span>白条</span></a></li>
+					</ul>
+				</div>
+				<!-- 生活服务下小图片 -->
+				<div class="float-left smallimg">
+					<img src="http://img11.360buyimg.com/da/jfs/t2647/323/3736131294/23334/d2ef25ff/57997a19N9db89f9f.jpg" class="smallimg1">
+				</div>
+		</div>
+	</div>
+	<!-- 第六行图片展示部分 -->
+	<div>
+		<div class="imgdiv">
+			<!-- 时钟图片 -->
+			<div class="clock">
+				<img class="float-left" src="clock.png">
+			</div>
+			<!-- 四张图片 -->
+			<div>
+				<img class="fourimg float-left" src="http://img12.360buyimg.com/vclist/jfs/t2800/337/3482649673/15232/ca472523/57909155Ne9c5e3a2.jpg">
+				<img class="fourimg float-left" src="http://img30.360buyimg.com/da/jfs/t3028/28/285203035/26276/e7685ca1/579ab517Nad26e140.jpg">
+				<img class="fourimg float-left" src="http://img11.360buyimg.com/da/jfs/t2926/258/1978537113/14124/af1b9002/579733b1Nb917b0f8.jpg">
+				<img class="fourimg1 float-left" src="http://img30.360buyimg.com/da/jfs/t2698/203/3730940610/31252/5a3dec34/5799a73eN0c887268.jpg">	
+			</div>	
+		</div>
+	</div>
+	<!-- 第七行京东收尾图部分-->
+	<div>
+		<img src="endimg.png">
+	</div>
+	<!-- 第八行自定义列表部分 -->
+	<div>
+		<div class="endlist">
+			<div class="endlist1 float-left">
+				<dl>
+					<dt class="dt1">购物指南</dt>
+					<dd>购物流程</dd>
+					<dd>会员介绍</dd>
+					<dd>生活旅行/团购</dd>
+					<dd>常见问题</dd>
+					<dd>大家电</dd>
+					<dd>联系客服</dd>
+				</dl>
+			</div>
+			<div class="endlist1 float-left">
+				<dl>
+					<dt class="dt1">配送方式</dt>
+					<dd>上门自提</dd>
+					<dd>211限时达</dd>
+					<dd>配送服务查询</dd>
+					<dd>配送费收费标准</dd>
+					<dd>海外配送</dd>
+				</dl>
+			</div>
+			<div class="endlist1 float-left">
+				<dl>
+					<dt class="dt1">支付方式</dt>
+					<dd>货到付款</dd>
+					<dd>在线支付</dd>
+					<dd>分期付款</dd>
+					<dd>邮局汇款</dd>
+					<dd>公司转账</dd>
+				</dl>
+			</div>
+			<div class="endlist1 float-left">
+				<dl>
+					<dt class="dt1">售后服务</dt>
+					<dd>售后政策</dd>
+					<dd>价格保护</dd>
+					<dd>退款说明</dd>
+					<dd>返修/退换货</dd>
+					<dd>取消订单</dd>
+				</dl>
+			</div>
+			<div class="endlist1 float-left">
+				<dl>
+					<dt class="dt1">特色服务</dt>
+					<dd>夺宝岛</dd>
+					<dd>DIY装机</dd>
+					<dd>延保服务</dd>
+					<dd>京东E卡</dd>
+					<dd>京东通信</dd>
+					<dd>京东ID+</dd>
+				</dl>
+			</div>
+			<div class="endlist1 float-left">
+				<dl>
+					<dt class="dt1">京东自营覆盖区县</dt>
+				</dl>
+			</div>
+			<div class="float-left">
+				<p class="lastp">京东已向全国2649个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+			</div>
+			<div class="float-right endlist1">
+				<a href="">查看详情></a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	</div>
+</body>
+</html>
